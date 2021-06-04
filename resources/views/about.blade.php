@@ -1,4 +1,6 @@
-{{-- @if(5 < 10)
+{{-- 
+Ejercicios video 16    
+@if(5 < 10)
     <p>Five is lower than ten</p>
 @endif 
 
@@ -20,7 +22,7 @@
 
 @isset($name)
     <h2>Name have been set</h2>
-@endisset--}}
+@endisset
 
 @switch($name)
     @case('Dary')
@@ -32,3 +34,25 @@
     @default
         <h2>Name is not Dary or John, is {{ $name }}</h2>
 @endswitch
+
+--}}
+
+@for ($i=0; $i<10; $i++)
+    <h2>The number is {{ $i }}</h2>
+@endfor
+
+@foreach ($names as $name)
+    <h2>The name is {{ $name }}</h2>
+@endforeach
+
+@forelse ($names as $name)
+    <h2>The name is {{ $name }}</h2>
+@empty
+    <h2>No names in array</h2>
+@endforelse
+
+{{ $i=0 }} 
+@while ($i < 10)
+    <h2>Print from while loop i value: {{ $i }}</h2>
+    {{ $i++ }}
+@endwhile

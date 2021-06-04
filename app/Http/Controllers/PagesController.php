@@ -13,7 +13,12 @@ public function index()
 
     public function about()
     {
-        $name = "Frank";
-        return view('about')->with('name', $name);
+        //$name = "Frank";
+        //return view('about')->with('name', $name);
+
+        $names=['John', 'Michael', 'David', 'Jessica'];
+        return view('about', [
+            'names' => $names
+        ]);
     }
 }
