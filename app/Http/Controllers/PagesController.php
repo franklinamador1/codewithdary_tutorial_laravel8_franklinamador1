@@ -6,13 +6,14 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function index()
+public function index()
     {
         return view('index');
     }
 
     public function about()
     {
-        return view('about');
+        $name = "Frank";
+        return view('about')->with('name', $name);
     }
 }
