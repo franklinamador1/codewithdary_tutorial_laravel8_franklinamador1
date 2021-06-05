@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet"/>
     <link href="//use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"/>
-
-    <style>
-        .active {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 </head>
 

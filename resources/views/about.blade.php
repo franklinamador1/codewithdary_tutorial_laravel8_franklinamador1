@@ -37,6 +37,8 @@ Ejercicios video 16
 
 --}}
 
+{{-- 
+Videos video 17: Loops.    
 @for ($i=0; $i<10; $i++)
     <h2>The number is {{ $i }}</h2>
 @endfor
@@ -55,4 +57,4 @@ Ejercicios video 16
 @while ($i < 10)
     <h2>Print from while loop i value: {{ $i }}</h2>
     {{ $i++ }}
-@endwhile
+@endwhile --}}
