@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
-
+use App\Http\Controllers\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,4 +80,7 @@ Route::get('/users', function(){
 //Pages controller - video: Views in Laravel 8
 Route::get('/',[PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
+
+//POST endpoint 
+Route::get('/posts', [PostsController::class, 'index']);
 
